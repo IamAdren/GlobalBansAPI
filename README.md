@@ -1,5 +1,7 @@
 # Global Bans API
 
+<h4>Please use http://172.93.101.204:3000/users/DISCORDID to get a response.</h4>
+
 <h4>Discord.js + Request Implementation</h4>
 
 ```javascript
