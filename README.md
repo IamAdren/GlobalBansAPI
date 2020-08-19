@@ -1,6 +1,6 @@
 # Global Bans API
 
-<h4>Discord.js Implementation</h4>
+<h4>Discord.js + Request Implementation</h4>
 
 ```javascript
 const Discord = require('discord.js');
