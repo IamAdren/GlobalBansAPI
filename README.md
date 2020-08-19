@@ -3,7 +3,7 @@
 <h4>Discord.js Implementation</h4>
 
 ```javascript
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const request = require('request');
 ```
