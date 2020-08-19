@@ -1,3 +1,3 @@
 # Global Bans API
 
-<h2>Discord.js Implementation</h2>
+<h4>Discord.js Implementation</h4>
