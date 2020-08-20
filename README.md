@@ -1,6 +1,6 @@
 # Global Bans API
 
-<h4>Please use http://172.93.101.204:3000/users/DISCORDID to get a response.</h4>
+<h4>Please use api.gbans.us/users/DISCORDID to get a response.</h4>
 
 <h4>Discord.js + Request Implementation</h4>
 
@@ -10,7 +10,7 @@ const client = new Discord.Client();
 const request = require('request');
 
 const token = 'TOKEN';
-const site = 'http://172.93.101.204:3000' // Temporary address for the API.
+const site = 'api.gbans.us' // Temporary address for the API.
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
