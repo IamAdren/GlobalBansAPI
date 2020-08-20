@@ -10,7 +10,7 @@ const client = new Discord.Client();
 const request = require('request');
 
 const token = 'TOKEN';
-const site = 'api.gbans.us' // Temporary address for the API.
+const site = 'api.gbans.us'
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
