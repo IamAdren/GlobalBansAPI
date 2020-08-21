@@ -44,5 +44,26 @@ client.login(token);
 var token = '';
 var guildID = '';
 
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const request = require('request');
+
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
+    client.guilds.cache.forEach((guild) => {
+        if (guild.id === guildID) {
+            let members = guild.members.cache.keyArray();
+            for (i = 0; i < members.length; i++) {
+                request(`http://api.gbans.us/users/${members[i]}`, async function (error, response, body) {
+                    let data = JSON.parse(body);
+                    if (data == 'No Results') {} else {
+                        console.log(`ID: ${data[0].UserId} Is on the ban list for ${data[0].Reason}`)                        
+                    }
+                });
+            }
+        }
+    });
+});
+
 client.login(token);
 ```
