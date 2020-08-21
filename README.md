@@ -39,6 +39,7 @@ client.login(token);
 ```
 
 <h4>Discord.js Example of getting all members banned in a guild.</h4>
+
 ```javascript
 var token = '';
 var guildID = '';
